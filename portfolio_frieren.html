@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Cedrick — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<!-- Mana particles injected by JS -->
+
+<nav>
+  <span class="nav-sigil">✦ Arcane Works</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <p class="hero-eyebrow">A thousand years in the making</p>
+    <h1 class="hero-name">John <span>Cedrick</span></h1>
+    <p class="hero-runic">ᚷᛖᛗᚡᛁᛚᛏᛖ · Student Mage · Builder of Systems</p>
+    <div class="hero-divider"></div>
+    <p class="hero-desc">
+      Like Frieren crossing continents to understand the spells she once forgot,
+      I traverse the landscapes of code and data — patiently crafting systems
+      that outlast the season they were born in.
+    </p>
+    <p class="scroll-hint">↓ · Descend · ↓</p>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div>
+      <div class="about-portrait">
+        <!-- Decorative SVG portrait frame -->
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="bg-grad" cx="50%" cy="40%" r="60%">
+              <stop offset="0%" stop-color="#2a2d45" stop-opacity="0.9"/>
+              <stop offset="100%" stop-color="#0d0e14" stop-opacity="1"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="400" fill="url(#bg-grad)"/>
+          <!-- Corner runes -->
+          <text x="14" y="28" font-family="serif" font-size="16" fill="#9aaae8" opacity="0.6">ᚠ</text>
+          <text x="270" y="28" font-family="serif" font-size="16" fill="#9aaae8" opacity="0.6">ᚢ</text>
+          <text x="14" y="392" font-family="serif" font-size="16" fill="#9aaae8" opacity="0.6">ᚦ</text>
+          <text x="270" y="392" font-family="serif" font-size="16" fill="#9aaae8" opacity="0.6">ᚨ</text>
+          <!-- Corner borders -->
+          <polyline points="8,40 8,8 40,8" stroke="#c9aa71" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <polyline points="260,8 292,8 292,40" stroke="#c9aa71" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <polyline points="8,360 8,392 40,392" stroke="#c9aa71" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <polyline points="260,392 292,392 292,360" stroke="#c9aa71" stroke-width="0.8" fill="none" opacity="0.5"/>
+          <!-- Silhouette of a mage figure -->
+          <ellipse cx="150" cy="130" rx="38" ry="44" fill="#2a3050" stroke="#c8c8dc" stroke-width="0.5" opacity="0.7"/>
+          <!-- hair-like lines -->
+          <path d="M120,108 Q110,80 128,70 Q150,55 172,70 Q190,80 180,108" fill="#1a1c28" stroke="#c8c8dc" stroke-width="0.4" opacity="0.8"/>
+          <!-- cloak / body -->
+          <path d="M100,174 Q70,240 60,300 Q90,310 150,312 Q210,310 240,300 Q230,240 200,174 Q180,160 150,158 Q120,160 100,174Z" fill="#2a3050" stroke="#9aaae8" stroke-width="0.4" opacity="0.6"/>
+          <!-- staff -->
+          <line x1="210" y1="165" x2="255" y2="350" stroke="#c9aa71" stroke-width="1.2" opacity="0.7"/>
+          <circle cx="213" cy="158" r="7" fill="none" stroke="#c9aa71" stroke-width="0.8" opacity="0.8"/>
+          <circle cx="213" cy="158" r="3" fill="#c9aa71" opacity="0.5"/>
+          <!-- sparkles -->
+          <circle cx="213" cy="158" r="12" fill="none" stroke="#9aaae8" stroke-width="0.4" opacity="0.4" stroke-dasharray="2,4"/>
+          <text x="130" y="355" font-family="serif" font-style="italic" font-size="11" fill="#9e9a93" text-anchor="middle">— your portrait here —</text>
+        </svg>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label reveal">The Traveler</div>
+      <h2 class="section-title reveal">About</h2>
+      <div class="section-rule reveal"></div>
+      <p class="reveal">
+        "Even a thousand years of wandering begins with a single step forward."
+      </p>
+      <p class="reveal">
+        I am a BS Information Technology student at José Rizal University, serving as research lead
+        for Agrimaps — a system born from the simple desire to make market prices visible to those
+        who need them most.
+      </p>
+      <p class="reveal">
+        Like Frieren collecting spells not for power but for understanding,
+        I gather knowledge across forecasting, full-stack engineering, and data systems —
+        not to hoard it, but to shape something worth leaving behind.
+      </p>
+      <p class="reveal">
+        Currently preparing for thesis panel defense. The dungeon is almost cleared.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-label reveal">Spellbook</div>
+    <h2 class="section-title reveal">Skills &amp; Disciplines</h2>
+    <div class="section-rule reveal"></div>
+    <div class="skills-grid reveal">
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚠ</div>
+        <div class="skill-name">Frontend</div>
+        <div class="skill-desc">React, Leaflet.js, Tailwind — weaving interfaces that breathe.</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚢ</div>
+        <div class="skill-name">Backend</div>
+        <div class="skill-desc">Node.js, Express — the scaffolding beneath every spell.</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚦ</div>
+        <div class="skill-name">Database</div>
+        <div class="skill-desc">PostgreSQL — ancient vaults holding structured memory.</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚨ</div>
+        <div class="skill-name">Data Science</div>
+        <div class="skill-desc">Python, SARIMA, pandas — divining patterns in the noise.</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚱ</div>
+        <div class="skill-name">Research</div>
+        <div class="skill-desc">Mixed-method design, IEEE citation, academic writing.</div>
+      </div>
+      <div class="skill-cell">
+        <div class="skill-glyph">ᚲ</div>
+        <div class="skill-name">Systems Design</div>
+        <div class="skill-desc">ERD, DFD, Scrum, ISO/IEC 25010 evaluation frameworks.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="section-label reveal">Relics Forged</div>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="section-rule reveal"></div>
+
+    <div class="project-card reveal">
+      <div class="project-number">I · Capstone</div>
+      <div class="project-title">Agrimaps</div>
+      <p class="project-desc">
+        A PERN stack agricultural commodity price monitoring system for NCR public markets.
+        Features SARIMA-based forecasting, Leaflet.js geomapping, and role-based dashboards
+        for DA personnel, vendors, and consumers. Powered by DA-AMAS Bantay Presyo data.
+      </p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">SARIMA</span>
+        <span class="tag">Leaflet.js</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-number">II · Design</div>
+      <div class="project-title">EcoVolt by Oragon</div>
+      <p class="project-desc">
+        Brand infographic design for a smart AI energy monitoring system. Developed
+        visual identity assets using a defined color palette for presentation and
+        promotional materials.
+      </p>
+      <div class="project-tags">
+        <span class="tag">UI Design</span>
+        <span class="tag">Infographic</span>
+        <span class="tag">Branding</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-number">III · Academic</div>
+      <div class="project-title">Data Pipeline Documentation</div>
+      <p class="project-desc">
+        Authored plain-English explanations for a 14-chart Python data science pipeline
+        covering preprocessing, ARIMA/SARIMA model selection, and forecast validation —
+        structured for panel-reviewer readability.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">ARIMA</span>
+        <span class="tag">Technical Writing</span>
+        <span class="tag">Markdown</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="section-label reveal">A Message Across Distance</div>
+    <h2 class="section-title reveal">Contact</h2>
+    <div class="section-rule"></div>
+    <p class="contact-text reveal">
+      "It may take a thousand years to fully understand a single spell —
+      but a conversation can begin in an instant."<br>
+      Reach out. The journey is better shared.
+    </p>
+    <div class="contact-links reveal">
+      <a href="/cdn-cgi/l/email-protection#4d3422383f0d28202c2421632e2220" class="contact-link">Email</a>
+      <a href="https://github.com/" class="contact-link" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/" class="contact-link" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p class="quote">"Even if it costs me another hundred years — it was worth seeing."</p>
+  <p>— Frieren, Beyond Journey's End &nbsp;·&nbsp; Crafted by John Cedrick</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
